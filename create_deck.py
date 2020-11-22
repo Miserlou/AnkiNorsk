@@ -9,14 +9,14 @@ lang_model = genanki.Model(
   MODEL_ID,
   'Basic English-Norwegian',
   fields=[
-    {'name': 'Norwegian'},
     {'name': 'English'},
+    {'name': 'Norwegian'},
   ],
   templates=[
     {
       'name': 'Card 1',
-      'qfmt': '{{Norwegian}}',
-      'afmt': '{{FrontSide}}<hr id="answer">{{English}}',
+      'qfmt': '<h2>{{Norwegian}}</h2>',
+      'afmt': '<h2>{{FrontSide}}<hr id="answer">{{English}}</h2>',
     },
   ])
 
